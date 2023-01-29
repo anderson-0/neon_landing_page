@@ -28,6 +28,16 @@
 
   &:hover {
     background-color: $brand-light-blue;
-    color: #FFF;
+    color: $white;
+  }
+
+  &.white {
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $brand-light-green;
+    }
   }
 }
