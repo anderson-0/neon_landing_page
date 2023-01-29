@@ -1,5 +1,7 @@
 header {
   background: #0073CE;
+  height: 8.8rem;
+  display: flex;
 
   .container {
     @include flex(row, center, space-between);
