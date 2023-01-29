@@ -5,5 +5,13 @@ header {
     @include flex(row, center, space-between);
   }
 
+  nav {
+    @include flex(row, center, space-between);
+    align-items: center;
 
+    ul {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
