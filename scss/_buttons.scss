@@ -8,6 +8,11 @@
   font-weight: 600;
   font-size: 1.6rem;
   color: #855b35;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #FFDC5C;
+  }
 }
 
 .btn-secondary {}
