@@ -28,6 +28,11 @@ header {
           font-size: 1.6rem;
           line-height: 125%;
           color: $white;
+          transition: color .3s;
+
+          &:hover {
+            color: $brand-yellow;
+          }
         }
       }
     }
