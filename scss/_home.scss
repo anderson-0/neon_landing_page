@@ -4,7 +4,11 @@
   background: url("../img/bg-hero.svg") no-repeat center center;
   padding-top: 17.5rem;
 
-  .text {
+  .container {
+    @include flex(row, flex-start, space-between);
+  }
+
+  .left-area {
     max-width: 100%;
     width: 68.4rem;
 
@@ -21,20 +25,36 @@
     }
 
     ul {
+      max-width: 62.1rem;
+      width: 100%;
       margin-top: 6.4rem;
       @include flex(row, center, space-between);
 
       li {
-        @include flex(row, center, center);
+        display: flex;
+        align-items: center;
 
         .icon {
-          width: 4.8rem;
-          height: 4.8rem;
+          width: 48px;
+          height: 48px;
           background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226) 100%);
           border-radius: 50%;
           @include flex(row, center, center);
+          margin-right: 1.2rem;
+        }
+
+        span {
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          color: $white;
         }
       }
     }
+  }
+
+  .right-area {
+    width: 100%;
+    max-width: 70.6rem;
+    margin-right: -174px;
   }
 }
