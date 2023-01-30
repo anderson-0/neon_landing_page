@@ -19,5 +19,10 @@
       color: $white;
       margin-bottom: 3.9rem;
     }
+
+    ul {
+      margin-top: 6.4rem;
+      @include flex(row, center, space-between);
+    }
   }
 }
