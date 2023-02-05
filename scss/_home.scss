@@ -118,7 +118,16 @@
     }
 
     .text {
+      width: 100%;
       @include flex(column, center, center);
+
+      .icon {
+        position: relative;
+
+        &:before {
+          content: "";
+        }
+      }
 
       .txtinfo {
         @include flex(column, center, center);
