@@ -130,6 +130,10 @@
           height: 83px;
           background: $gray-600;
           position: absolute;
+          top: -104px; // 83px (height) + 21px (margin-bottom)
+          left: 50%;
+          // transform: translateX(-50%); // alternative to negative margin-left
+          margin-left: -2.5px;
         }
       }
 
