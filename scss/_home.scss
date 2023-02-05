@@ -141,6 +141,13 @@
           text-align: center;
         }
 
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 2.6rem;
+            }
+          }
+        }
       }
     }
   }
