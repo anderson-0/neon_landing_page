@@ -126,6 +126,10 @@
 
         &:before {
           content: "";
+          width: 5px;
+          height: 83px;
+          background: $gray-600;
+          position: absolute;
         }
       }
 
