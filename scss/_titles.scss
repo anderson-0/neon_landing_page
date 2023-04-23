@@ -51,3 +51,9 @@ h4 {
     font-size: 5.2rem;
   }
 }
+
+@include responsive(991px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
