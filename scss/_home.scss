@@ -9,8 +9,8 @@
   }
 
   .left-area {
-    max-width: 100%;
-    width: 68.4rem;
+    max-width: 68.4rem;
+    width: 100%;
 
     h3 {
       opacity: 0.8;
@@ -79,17 +79,84 @@
       .circle {
         top: 0;
         right: 43px;
+        max-width: 55.3rem;
       }
 
       .front-card {
         top: 41px;
         z-index: 2;
+        max-width: 43.5rem;
       }
 
       .back-card {
         bottom: 46px;
-        right: 86px;
+        right: 8.6rem;
         z-index: 1;
+        max-width: 35.2rem;
+      }
+    }
+  }
+
+  @include responsive(1500px) {
+    .right-area {
+      margin-right: -13.4rem;
+    }
+  }
+
+  @include responsive(1440px) {
+    .right-area {
+      margin-right: -10.4rem;
+    }
+  }
+
+  @include responsive(1366px) {
+    padding-top: 14.5rem;
+    .right-area {
+      margin-right: -8.4rem;
+
+      .image {
+        .back-card {
+          right: 4rem;
+        }
+        .front-card {
+          right: 20rem;
+        }
+      }
+    }
+  }
+
+  @include responsive(1050px) {
+    height: 65rem;
+    padding-top: 12.5rem;
+
+    .left-area {
+      // max-width: 98rem;
+      ul {
+        margin-top: 4.5rem;
+      }
+    }
+
+    .right-area {
+      margin-right: -2.4rem;
+      // max-width: 50rem;
+
+      h2 {
+          margin-bottom: 1.5rem;
+        }
+
+      .image {
+        height: 43rem;
+        
+        .back-card {
+          max-width: 29rem;
+          bottom: -3rem;
+        }
+        .front-card {
+          max-width: 35rem;
+        }
+        .circle {
+          max-width: 46rem;
+        }
       }
     }
   }

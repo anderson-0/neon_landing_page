@@ -38,3 +38,16 @@ h3 {
 h4 {
   font-size: 2rem;
 }
+
+@include responsive(1150px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+
+}
+
+@include responsive(1050px) {
+  h1 {
+    font-size: 5.2rem;
+  }
+}
