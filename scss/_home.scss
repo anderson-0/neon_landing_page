@@ -438,6 +438,7 @@
         display: flex;
         align-items: center;
         padding-left: 5.9rem;
+        position: relative;
         .text {
           width: 100%;
           max-width: 38rem;
@@ -471,12 +472,28 @@
           }
         }
         .image {
-          margin-left: 0.6rem;
+          position: absolute;
+          top: 9.9rem;
+          right: 1.3rem;
+          max-width: 45.4rem;
         }
        
       }
     }
   }
+  @include responsive(1366px) {
+    .container{
+      .right-area {
+        .box-card {
+          .image {
+            top: 9.2rem;
+            right: -1.7rem;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 .s-depositions {
