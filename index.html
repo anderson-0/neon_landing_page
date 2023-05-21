@@ -159,10 +159,54 @@
     <div class="container">
       <div class="top">
         <h2><span>Practical, Easy, Modern.</span>Get everything done stress-free</h2>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="slider-testimonies">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-testimony">
+              <div class="user">
+                <strong>@anderson</strong>
+                <img src="img/icon-twitter.svg" alt="Twitter Icon"/>
+              </div>
+              <p>Thanks @neon! Amazing wrapping and the card is beautiful! I love this bank #neon</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-testimony">
+              <div class="user">
+                <strong>@anderson</strong>
+                <img src="img/icon-twitter.svg" alt="Twitter Icon"/>
+              </div>
+              <p>Thanks @neon! Amazing wrapping and the card is beautiful! I love this bank #neon</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-testimony">
+              <div class="user">
+                <strong>@anderson</strong>
+                <img src="img/icon-twitter.svg" alt="Twitter Icon"/>
+              </div>
+              <p>Thanks @neon! Amazing wrapping and the card is beautiful! I love this bank #neon</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".slider-testimonies", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      pagination: {
+        el: ".card-testimonies. .container .top .swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>

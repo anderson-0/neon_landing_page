@@ -39,6 +39,14 @@ h4 {
   font-size: 2rem;
 }
 
+p {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  @include responsive(1050px) {
+    font-size: 1.6rem;
+  }
+}
+
 @include responsive(1150px) {
   h1 {
     font-size: 5.5rem;
