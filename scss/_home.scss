@@ -126,7 +126,7 @@
 
   @include responsive(1050px) {
     height: 65rem;
-    padding-top: 12.5rem;
+    padding-top: 14.5rem;
 
     .left-area {
       // max-width: 98rem;
@@ -136,8 +136,7 @@
     }
 
     .right-area {
-      margin-right: -2.4rem;
-      // max-width: 50rem;
+      // margin-right: -2.4rem;
 
       h2 {
           margin-bottom: 1.5rem;
@@ -148,10 +147,11 @@
         
         .back-card {
           max-width: 29rem;
-          bottom: -3rem;
+          bottom: 0;
         }
         .front-card {
           max-width: 35rem;
+          top: 6rem;
         }
         .circle {
           max-width: 46rem;
@@ -170,10 +170,9 @@
     }
 
     .left-area {
-      margin-bottom: 5rem;
-
-      max-width: 68.5rem;
       @include flex(column, center, center);
+      max-width: 68.5rem;
+      margin-bottom: 5rem;
       
       h1 {
         margin-bottom: 2.6rem;
@@ -193,6 +192,9 @@
     }
 
     .right-area {
+      h2 {
+        margin-bottom: 1.9rem;
+      }
       .image {
         max-width: 51.1rem;
         height: 42.4rem;
@@ -200,7 +202,6 @@
         top: 0;
         .front-card {
           max-width: 34rem;
-          // right: 17rem;
           left: 0;
           top: 3.5rem
         }

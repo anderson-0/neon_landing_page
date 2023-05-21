@@ -50,8 +50,7 @@ p {
 @include responsive(1150px) {
   h1 {
     font-size: 5.5rem;
-  }
-
+  } 
 }
 
 @include responsive(1050px) {
