@@ -479,17 +479,21 @@
   }
 }
 
-.card-testimonies {
+.s-depositions {
   padding-top: 13.4rem;
   .top {
     margin-bottom: 4rem;
-
+    @include flex(row, flex-end, space-between);
     h2 {
       span {
         display: block;
         color: $gray-200;
         margin-bottom: 1.4rem;
       }
+    }
+    .swiper-pagination {
+      position: relative;
+      width: auto;
     }
   }
 
