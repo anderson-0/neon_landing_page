@@ -601,6 +601,16 @@
         bottom: 0;
         right: 0;
       }
+
+      &.mockup01 {
+        left: 0;
+        bottom: 4.7rem;
+      }
+
+      &.mockup02 {
+        top: 0.3rem;
+        left: 25.8rem;
+      }
     }
   }
 }
