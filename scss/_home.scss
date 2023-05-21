@@ -511,6 +511,20 @@
     .swiper-pagination {
       position: relative;
       width: auto;
+
+      .swiper-pagination-bullet {
+        background: $brand-yellow;
+        opacity: 0.3;
+        border-radius: 12px;
+        transition: all .3s;
+        &:not(:first-child) {
+          margin-left: 0.4rem;
+        }
+        &-active {
+          opacity: 1;
+          width: 1.7rem;
+        }
+      }
     }
   }
 
