@@ -1,0 +1,33 @@
+footer {
+    background-color: $brand-blue;
+    padding-top: 4.9rem;
+
+    .top {
+        @include flex(row, center, space-between);
+        border-bottom: 1px solid rgba(73, 196, 253, 0.2);
+        padding-bottom: 4.8rem;
+        margin-bottom: 5.7rem;
+
+        .share {
+            display: flex;
+            align-items: center;
+            text-align: right;
+            color: $white;
+            opacity: 0.7;
+            span {
+                font-size: 1.4rem;
+                line-height: 125%;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                margin-left: 3rem;
+                li {
+                    &:not(:first-child) {
+                        margin-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
